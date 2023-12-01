@@ -6,14 +6,14 @@ Cache your any resource, load once!
 
 # install
 ```bash
-pnpm install loadonce
+pnpm install @senar/loadonce
 ```
 
 # usage
 
 ## cache one source
 ```ts
-import loadonce from 'loadonce'
+import loadonce from '@senar/loadonce'
 
 const resourceUrl = 'your-source-url, could be fetch'
 const resource = await loadonce(resourceUrl)
@@ -23,7 +23,7 @@ const resource1 = await loadonce(resourceUrl)
 
 ## cache some source
 ```ts
-import loadonce from 'loadonce'
+import loadonce from '@senar/loadonce'
 
 const resourceUrls = ['https://one', 'https://two']
 const resource = await loadonce(resourceUrls)
@@ -35,7 +35,7 @@ const resource1 = await loadonce(resourceUrls)
 
 ### limit key's count
 ```ts
-import loadonce, { setMaxKeyCount } from 'loadonce'
+import loadonce, { setMaxKeyCount } from '@senar/loadonce'
 
 setMaxKeyCount(100) // limit max key count: 100
 
@@ -45,7 +45,7 @@ const resource = await loadonce('...')
 
 ### limit cache's size
 ```ts
-import loadonce, { setMaxCacheSize } from 'loadonce'
+import loadonce, { setMaxCacheSize } from '@senar/loadonce'
 
 setMaxCacheSize(1024 * 1024 * 1024) // limit max size 1GB 1024 * 1024 * 1024 bytes
 

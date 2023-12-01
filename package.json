@@ -1,5 +1,5 @@
 {
-  "name": "loadonce",
+  "name": "@senar/loadonce",
   "type": "module",
   "version": "0.0.1",
   "packageManager": "pnpm@8.11.0",

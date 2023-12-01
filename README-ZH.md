@@ -6,7 +6,7 @@
 
 # 安装
 ```bash
-pnpm install loadonce
+pnpm install @senar/loadonce
 ```
 
 
@@ -16,7 +16,7 @@ pnpm install loadonce
 ## 缓存单个资源
 
 ```ts
-import loadonce from 'loadonce'
+import loadonce from '@senar/loadonce'
 
 const resourceUrl = '你的资源URL，可以是fetch请求的URL'
 const resource = await loadonce(resourceUrl)
@@ -27,7 +27,7 @@ const resource1 = await loadonce(resourceUrl)
 ## 缓存多个资源
 
 ```ts
-import loadonce from 'loadonce'
+import loadonce from '@senar/loadonce'
 
 const resourceUrls = ['https://one', 'https://two']
 const resource = await loadonce(resourceUrls)
@@ -41,7 +41,7 @@ const resource1 = await loadonce(resourceUrls)
 ### 限制键的数量
 
 ```ts
-import loadonce, { setMaxKeyCount } from 'loadonce'
+import loadonce, { setMaxKeyCount } from '@senar/loadonce'
 
 setMaxKeyCount(100) // 限制最大键的数量为100个
 
@@ -52,7 +52,7 @@ const resource = await loadonce('...')
 ### 限制缓存的大小
 
 ```ts
-import loadonce, { setMaxCacheSize } from 'loadonce'
+import loadonce, { setMaxCacheSize } from '@senar/loadonce'
 
 setMaxCacheSize(1024 * 1024 * 1024) // 限制最大缓存大小为1GB，即 1024 * 1024 * 1024 字节
 
