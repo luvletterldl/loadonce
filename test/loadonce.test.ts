@@ -15,7 +15,7 @@ describe('cache', () => {
   })
 })
 
-describe.skip('clear', () => {
+describe('clear', () => {
   it('count clear', async () => {
     await clear()
     setMaxKeyCount(3)
